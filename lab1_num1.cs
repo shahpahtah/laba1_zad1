@@ -25,7 +25,7 @@ namespace ConsoleApp3
             Numerator = a1;
             if (a2 == 0)
             {
-                throw new ArgumentException();
+                throw new ArgumentException("знаменатель не может быть равен нулю!", nameof(a2));
             }
             Denominator = a2;
         }
@@ -63,12 +63,12 @@ namespace ConsoleApp3
             }
 
         }
-        override public string ToString()
+        public override string ToString()
         {
             socrat();
             if (Numerator == 0)
             {
-                return "0\n";
+                return "0";
             }
             else if (Denominator == 1)
             {
@@ -277,7 +277,7 @@ namespace ConsoleApp3
         {
             if (b == 0)
             {
-                throw new ArgumentException();
+                throw new ArgumentException("знаменатель не может быть равен нулю!",nameof(b));
             }
             lab1_num1 c = new lab1_num1(0, 1);
             c.Numerator = a.Numerator;

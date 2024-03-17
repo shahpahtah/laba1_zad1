@@ -16,9 +16,9 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            lab1_num1 a = new lab1_num1(1,2);
-            lab1_num1 b = new lab1_num1(1, 20);
-            lab1_num1 c = a /2 ;
+            lab1_num1 a = new lab1_num1(1, 5);
+            lab1_num1 b = new lab1_num1(2, 1);
+            lab1_num1 c = a / 0 ;
             Console.WriteLine(c.ToString());
 
         }

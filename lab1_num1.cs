@@ -94,7 +94,7 @@ namespace ConsoleApp3
         }
         public static bool operator ==(lab1_num1 a, lab1_num1 b)
         {
-                if (a.Numerator.ToString() == b.Numerator.ToString() && a.Denominator.ToString() == b.Denominator.ToString())
+                if (a.ToString() == b.ToString() )
                 {
                     return true;
                 }
@@ -104,7 +104,7 @@ namespace ConsoleApp3
         {
             if (a.Denominator != 0 && b.Denominator != 0)
             {
-                if (a.Numerator.ToString() != b.Numerator.ToString() || a.Denominator.ToString() != b.Denominator.ToString())
+                if (a.ToString() != b.ToString())
                 {
                     return true;
                 }
